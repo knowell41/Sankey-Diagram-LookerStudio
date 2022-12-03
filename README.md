@@ -88,4 +88,7 @@ $> Python build.py <target environment>
 ## Sankey Diagram with Looker Studio (dataset 2)
 ![dataset 2](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/image/sample2.png)
 
+## Live Demo Report
+[Demo: Sankey](https://datastudio.google.com/reporting/aff1949a-e009-4ab9-adfc-21b37fc36382)
+
 

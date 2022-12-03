@@ -45,7 +45,12 @@ def updateManifest(envi):
     data["components"][0]["resource"]["js"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.js"
     data["components"][0]["resource"]["config"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.json"
     data["components"][0]["resource"]["css"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.css"
-    
+
+    if envi == "prod":
+        data["devMode"] = False
+    else:
+        data["devMode"] = True
+
     with open(f"{BASE_DIR}/src/manifest.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 

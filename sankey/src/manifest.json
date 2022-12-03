@@ -3,22 +3,22 @@
     "logoUrl": "https://storage.googleapis.com/gds-resource-files/sankey/Sankey.ico",
     "organization": "Emmanuel Rustia Pagayonan",
     "organizationUrl": "https://github.com/knowell41",
-    "termsOfServiceUrl": "https://github.com/knowell41/SankeyDiagram4LookerStudio",
-    "supportUrl": "https://github.com/knowell41/SankeyDiagram4LookerStudio",
-    "packageUrl": "https://github.com/knowell41/SankeyDiagram4LookerStudio",
-    "privacyPolicyUrl": "https://github.com/knowell41/SankeyDiagram4LookerStudio",
+    "termsOfServiceUrl": "https://github.com/knowell41/Sankey-Diagram-LookerStudio",
+    "supportUrl": "https://www.linkedin.com/in/raimei12/",
+    "packageUrl": "https://github.com/knowell41/Sankey-Diagram-LookerStudio",
+    "privacyPolicyUrl": "https://github.com/knowell41/Sankey-Diagram-LookerStudio",
     "description": "Simple Sankey Diagram",
-    "devMode": true,
+    "devMode": false,
     "components": [
         {
-            "id": "sankeyPortfolio",
+            "id": "multilevelSankey",
             "name": "Sankey",
             "iconUrl": "https://storage.googleapis.com/gds-resource-files/sankey/Sankey.ico",
             "description": "A simple sankey chart.",
             "resource": {
-                "js": "gs://gds-resource-files/gds/ua/sankey/index.js",
-                "config": "gs://gds-resource-files/gds/ua/sankey/index.json",
-                "css": "gs://gds-resource-files/gds/ua/sankey/index.css"
+                "js": "gs://gds-resource-files/gds/prod/sankey/index.js",
+                "config": "gs://gds-resource-files/gds/prod/sankey/index.json",
+                "css": "gs://gds-resource-files/gds/prod/sankey/index.css"
             }
         }
     ]
