@@ -60,6 +60,7 @@ $> Python build.py <target environment>
 
 
 ## Sample Dataset 1
+[sample_data1.csv]( https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/dataset/sample_data1.csv "sample_data1.csv")
 
 | source | target | value |
 | ------ | ------ | ----- |
@@ -70,9 +71,12 @@ $> Python build.py <target environment>
 | E | H | 1 |
 | F | I | 10|
 
-![dataset 1](image\sample1.png)
+## Sankey Diagram with Looker Studio (dataset 1)
+![dataset 1](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/image/sample1.png)
 
 ## Sample Dataset 2
+2[sample_data2.csv](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/dataset/sample_data2.csv "sample_data2.csv")
+
 |X|Y|count|
 |--|--|----|
 |aa|aa|4|
@@ -81,6 +85,7 @@ $> Python build.py <target environment>
 |bb|ii|9|
 |bb|jj|1|
 
-![dataset 2](image\sample2.png)
+## Sankey Diagram with Looker Studio (dataset 2)
+![dataset 2](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/image/sample2.png)
 
 
