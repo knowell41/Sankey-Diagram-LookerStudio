@@ -75,7 +75,7 @@ $> Python build.py <target environment>
 ![dataset 1](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/image/sample1.png)
 
 ## Sample Dataset 2
-2[sample_data2.csv](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/dataset/sample_data2.csv "sample_data2.csv")
+[sample_data2.csv](https://github.com/knowell41/SankeyDiagram4LookerStudio/blob/main/dataset/sample_data2.csv "sample_data2.csv")
 
 |X|Y|count|
 |--|--|----|
