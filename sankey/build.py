@@ -5,16 +5,17 @@ import os
 import pathlib as Path
 import sys
 import json
+from dotenv import load_dotenv
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/serviceAccountKey.json"
 
-### Bucket details ###
-BUCKET = "gds-resource-files"
-DEV = "gds/dev/sankey/"
-PROD = "gds/prod/sankey/"
-TEST = "gds/ua/sankey/"
+load_dotenv("/etc/gcp.env") ## env file
 
-projectname = "sankey"
+BUCKET = os.getenv('BUCKET')
+DEV = os.getenv('DEV')
+PROD = os.getenv('PROD')
+TEST = os.getenv('TEST')
+
+projectname = os.getenv('PROJECTNAME')
 
 try:
     if sys.argv[1] == "prod":
@@ -41,9 +42,9 @@ def updateManifest(envi):
     data = json.load(ff)
     ff.close()
 
-    data["components"][0]["resource"]["js"] = f"gs://gds-resource-files/gds/{envi}/{projectname}/index.js"
-    data["components"][0]["resource"]["config"] = f"gs://gds-resource-files/gds/{envi}/{projectname}/index.json"
-    data["components"][0]["resource"]["css"] = f"gs://gds-resource-files/gds/{envi}/{projectname}/index.css"
+    data["components"][0]["resource"]["js"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.js"
+    data["components"][0]["resource"]["config"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.json"
+    data["components"][0]["resource"]["css"] = f"gs://{BUCKET}/gds/{envi}/{projectname}/index.css"
     
     with open(f"{BASE_DIR}/src/manifest.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
