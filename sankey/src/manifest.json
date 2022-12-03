@@ -1,0 +1,25 @@
+{
+    "name": "Sankey",
+    "logoUrl": "https://storage.googleapis.com/gds-resource-files/sankey/Sankey.ico",
+    "organization": "Emmanuel Rustia Pagayonan",
+    "organizationUrl": "https://url",
+    "termsOfServiceUrl": "https://url",
+    "supportUrl": "https://url",
+    "packageUrl": "https://url",
+    "privacyPolicyUrl": "https://url",
+    "description": "Simple Sankey Diagram",
+    "devMode": true,
+    "components": [
+        {
+            "id": "sankeyPortfolio",
+            "name": "Sankey",
+            "iconUrl": "https://storage.googleapis.com/gds-resource-files/sankey/Sankey.ico",
+            "description": "A simple sankey chart.",
+            "resource": {
+                "js": "gs://gds-resource-files/gds/prod/sankey/index.js",
+                "config": "gs://gds-resource-files/gds/prod/sankey/index.json",
+                "css": "gs://gds-resource-files/gds/prod/sankey/index.css"
+            }
+        }
+    ]
+}

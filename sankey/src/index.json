@@ -1,0 +1,118 @@
+{
+    "data": [
+        {
+            "id": "concepts",
+            "label": "Concepts",
+            "elements": [
+                {
+                    "id": "tableDimension",
+                    "label": "Dimension (Source and Target)",
+                    "type": "DIMENSION",
+                    "options": {
+                        "min": 1,
+                        "max": 2
+                    }
+                },
+                {
+                    "id": "tableMetric",
+                    "label": "Metric (Values)",
+                    "type": "METRIC",
+                    "options": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "style": [
+        {
+            "id": "sankeyDiv",
+            "label": "Sankey properties",
+            "elements": [
+                {
+                    "id": "sankeyPlotTitle",
+                    "label": "title",
+                    "defaultValue": "",
+                    "type": "TEXTINPUT"
+                },
+                {
+                    "id": "nodeArrangementMode",
+                    "label": "Nodes Arrangement Mode",
+                    "defaultValue": "freeform",
+                    "type": "SELECT_SINGLE",
+                    "options":[
+                        {
+                            "label": "snap",
+                            "value": "snap"
+                        },
+                        {
+                            "label": "perpendicular",
+                            "value": "perpendicular"
+                        },
+                        {
+                            "label": "freeform",
+                            "value": "freeform"
+                        },
+                        {
+                            "label": "fixed",
+                            "value": "fixed"
+                        }
+                        
+                    ]
+                },
+                {
+                    "id": "nodePadding",
+                    "label": "Nodes spaces",
+                    "defaultValue": "3",
+                    "type": "TEXTINPUT"
+                },
+                {
+                    "id": "nodeThickness",
+                    "label": "Nodes Thickness",
+                    "defaultValue": "30",
+                    "type": "TEXTINPUT"
+                },
+                {
+                    "id": "nodeLineColor",
+                    "label": "Node Line Color",
+                    "type": "FILL_COLOR"
+                },
+                {
+                    "id": "nodeLineWidth",
+                    "label": "Node Line Width",
+                    "type": "LINE_WEIGHT"
+                },
+                {
+                    "id": "changeLinkColorEnabled",
+                    "label": "Link Color Update",
+                    "defaultValue": false,
+                    "type": "CHECKBOX"
+                },
+                {
+                    "id": "linkColor",
+                    "label": "Link Color",
+                    "defaultValue": "white",
+                    "type": "FILL_COLOR"
+                },
+                {
+                    "id": "layoutFontSize",
+                    "label": "Font Size",
+                    "defaultValue": "12",
+                    "type": "FONT_SIZE"
+                },
+                {
+                    "id": "layoutFontColor",
+                    "label": "Font Color",
+                    "type": "FONT_COLOR"
+                },
+                {
+                    "id": "layoutBGcolor",
+                    "label": "Paper BG Color",
+                    "defaultValue": "white",
+                    "type": "FILL_COLOR"
+                }
+            ]
+        }
+    ]
+}

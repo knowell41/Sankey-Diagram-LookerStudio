@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1pt solid #d1d1d1;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
